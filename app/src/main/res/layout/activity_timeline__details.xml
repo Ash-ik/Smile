@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFF8E1"
+    android:scrollbars="none">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".TimelineDetailsPatient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/layout_design"
+    android:layout_marginTop="10dp"
+    android:id="@+id/weight">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Current weight"
+        android:textSize="25sp"
+        android:textColor="#CE93D8"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/edit"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/edit"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edit"
+        android:id="@+id/weight_view"
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/layout_design"
+            android:layout_marginTop="10dp"
+            android:id="@+id/mother_details"
+            android:layout_below="@+id/weight">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="What's happening to you \nand your baby?"
+                android:textSize="25sp"
+                android:textColor="#CE93D8"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/edit"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/edit_mother_details"/>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/layout_design"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/mother_details"
+            android:id="@+id/must_to_do">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="This is your 2nd Trimester"
+                android:textSize="25sp"
+                android:textColor="#CE93D8"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/trimester_of_must_to_do"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="See what must to do"
+                android:textSize="20sp"
+                android:textColor="#CE93D8"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/trimester_of_must_to_do"
+                />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/layout_design"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/must_to_do"
+        android:id="@+id/Food_Dtails">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Foods"
+            android:textSize="25sp"
+            android:textColor="#CE93D8"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/layout_design"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/Food_Dtails"
+            android:id="@+id/Exercise">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Exercise"
+                android:textSize="25sp"
+                android:textColor="#CE93D8"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/layout_design"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/Exercise"
+            android:id="@+id/Vaccines">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Vaccines"
+                android:textSize="25sp"
+                android:textColor="#CE93D8"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/layout_design"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/Vaccines"
+            android:id="@+id/Dangers">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Dangers"
+                android:textSize="25sp"
+                android:textColor="#CE93D8"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/layout_design"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/Dangers"
+            android:id="@+id/Emergency_numbers">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Emergency Numbers"
+                android:textSize="25sp"
+                android:textColor="#CE93D8"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group_1">
+
+        <item
+            android:id="@+id/menu_timeline"
+            android:icon="@drawable/ic_global_menu_direct"
+            android:title="Your Timeline" />
+        <item
+            android:id="@+id/menu_dailyTips"
+            android:icon="@drawable/ic_global_menu_news"
+            android:title="Todays Tips" />
+        <item
+            android:id="@+id/menu_healthChart"
+            android:icon="@drawable/ic_global_menu_popular"
+            android:title="Health Chart" />
+        <item
+            android:id="@+id/menu_nearbyHospital"
+            android:icon="@drawable/ic_global_menu_nearby"
+            android:title="Nearby Hospital" />
+        <item
+            android:id="@+id/menu_emergencyNumber"
+            android:icon="@android:drawable/ic_menu_call"
+            android:title="Emergency Numbers" />
+        <item
+            android:id="@+id/menu_yourDoctor"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="Your Doctor" />
+    </group>
+    <group android:id="@+id/menu_group_2">
+        <item
+            android:id="@+id/menu_settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/menu_about"
+            android:title="About" />
+    </group>
+</menu>

@@ -1,0 +1,227 @@
+<com.mxn.soul.flowingdrawer_core.LeftDrawerLayout
+    android:id="@+id/id_drawerlayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    >
+    <!--content-->
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#CE93D8"
+                android:id="@+id/violate_layout"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="40sp"
+                    android:layout_marginTop="55dp"
+                    android:text="1st\nTrimester"
+                    android:id="@+id/trimester"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:text="Today"
+                    android:id="@+id/day"
+                    android:layout_below="@+id/trimester"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Week"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="55dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/week_textView"
+
+
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="60dp"
+                    android:layout_height="350dp"
+                    android:id="@+id/rv"
+                    android:layout_gravity="right"
+                    android:layout_below="@+id/week_textView"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#26A69A"
+                android:layout_below="@+id/violate_layout"
+                android:id="@+id/green_layout">
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:text="Previous"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:id="@+id/previous_button"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+
+                    />
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:text="Next"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:id="@+id/next_button"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/trimester_buttons"
+                >
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/week_button"
+                    android:id="@+id/trimester1"
+                    android:textSize="20sp"/>
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/week_button"
+                    android:id="@+id/trimester2"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@+id/trimester1"/>
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/week_button"
+                    android:id="@+id/trimester3"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@+id/trimester2"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/layout_design"
+                android:layout_below="@+id/green_layout"
+                android:id="@+id/week_details"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:text=" Its week 6\n See what's happening :)"
+                    android:textAlignment="textStart"
+                    android:gravity="start"
+                    android:textSize="25sp"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="See More"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:id="@+id/go_to_more_options"
+                android:layout_below="@+id/week_details"/>
+
+
+
+
+        </RelativeLayout>
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/view_feed_toolbar" />
+        </android.support.design.widget.AppBarLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <!--menu-->
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:clipChildren="false"
+        android:background="@color/style_color_primary"
+        >
+
+        <com.mxn.soul.flowingdrawer_core.FlowingView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/style_color_primary"/>
+
+        <FrameLayout
+            android:id="@+id/id_container_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="25dp"
+            android:paddingRight="10dp"
+            android:background="@color/style_color_primary"
+            />
+
+    </RelativeLayout>
+
+</com.mxn.soul.flowingdrawer_core.LeftDrawerLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+
+<RelativeLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/danger1"
+        android:id="@+id/a"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/danger2"
+        android:layout_below="@+id/a"
+        android:id="@+id/b"
+        android:layout_marginTop="5dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/danger3"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/b"
+        android:id="@+id/c"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:id="@+id/d"
+        android:layout_below="@+id/c"
+        android:background="@drawable/danger4"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/e"
+        android:layout_below="@+id/d"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/danger5"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/f"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/e"
+        android:background="@drawable/danger6"/>
+
+</RelativeLayout>
+</ScrollView>
